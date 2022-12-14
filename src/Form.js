@@ -57,7 +57,7 @@ export default function Form() {
                     <input onChange={getData} type='text' name='seasion' />
 
                     <span>File Path</span>
-                    <input onChange={getData} type='file' name='filepath' />
+                    <input onChange={getData} type='text' name='filepath' />
                     <div>
                         <span> <button onClick={postData}>Get Data</button></span>
                     </div>

@@ -2,27 +2,27 @@
     display: grid;
     text-align: center;
     justify-content: center;
-    width:600px;
-    
+    width: 600px;
+
 }
 
 th,
 td {
     border: 1px solid black;
-    padding:6px;
+    padding: 4px;
 }
-th{
+
+th {
     text-align: left;
 }
 
 table {
     border-collapse: collapse;
-    width:850px;
-    
-   
-    margin-left:10px;
+    width:250px;
+    font-size: 12px;
+
 }
 
-#id{
-    font-family: 'Tiro Devanagari Hindi', serif;
+.signature {
+    margin-left: 650px;
 }

@@ -1,0 +1,23 @@
+
+.center{
+    display: grid;
+    justify-content: center;
+}
+
+.display_flex{
+    display: grid;
+    justify-content: center;
+}
+
+
+button{
+    width:20%;
+    margin-top: 25px ;
+    margin-left:200px;
+}
+span{
+    padding:5px;
+}
+select{
+    width:200px ;
+}

@@ -8,7 +8,6 @@ export default function Form() {
 
     const [apidata, setapidata] = useState([])
 
-
     const [data, setdata] = useState({
         organizationCode: " ",
         year: " ",
@@ -26,22 +25,20 @@ export default function Form() {
         const { organizationCode, year } = data
 
 
-        const rawdata = await fetch(`https://jsonplaceholder.typicode.com/users?id=${1}`)
+        const rawdata = await fetch(`https://jsonplaceholder.typicode.com/users?id=${organizationCode}`)
         const result = await rawdata.json()
         setapidata(result)
         console.log(result)
-
     }
     return (
         <>
             <div className='center'>
                 <h1>FARMER DETAILS</h1>
             </div>
-
             <div className='responsive'><div className='display_flex'>
                 <form>
                     <span>OrganizationCode</span>
-                    <input onChange={getData} type='text' name='organizationCode' />
+                    <input onChange={getData} type='number' name='organizationCode' required />
                     <span>Year</span>
                     <select onChange={getData} name='year' >
                         <option value="2022">2022</option>
@@ -54,21 +51,16 @@ export default function Form() {
                         <option value="2015">2015</option>
                     </select>
                     <span>Seasion</span>
-                    <input onChange={getData} type='text' name='seasion' />
-
+                    <input onChange={getData} type='text' name='seasion' required/>
                     <span>File Path</span>
-                    <input onChange={getData} type='text' name='filepath' />
+                    <input onChange={getData} type='file' name='filepath' required />
                     <div>
                         <span> <button onClick={postData}>Get Data</button></span>
                     </div>
                 </form>
             </div>
             </div>
-
-
             {
-
-
                 apidata.map((item, index) => {
                     return <PdfPage
 
@@ -80,7 +72,6 @@ export default function Form() {
                     />
                 })
             }
-
         </>
     )
 }

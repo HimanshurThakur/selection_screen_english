@@ -3,13 +3,10 @@
     display: grid;
     justify-content: center;
 }
-
 .display_flex{
     display: grid;
     justify-content: center;
 }
-
-
 button{
     width:20%;
     margin-top: 25px ;

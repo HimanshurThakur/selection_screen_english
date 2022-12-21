@@ -3,6 +3,7 @@
     text-align: center;
     justify-content: center;
     width: 600px;
+    margin-left:100px;
 
 }
 
@@ -18,11 +19,14 @@ th {
 
 table {
     border-collapse: collapse;
-    width:250px;
-    font-size: 12px;
+    width:210px;
+    font-size:11px;
+    margin-left: 50px;
 
 }
 
 .signature {
-    margin-left: 650px;
+    margin-left: 630px;
 }
+
+
